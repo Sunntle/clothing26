@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang quản trị </title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="../asset/css/styleadmin.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script defer type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script defer src="../asset/js/jsadmin.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="btn bg-dark d-flex align-items-center justify-content-center btn-special">
+            <span class="fas fa-bars"></span>
+        </div>
+        <nav class="sidebar-sub">
+            <h1 class="text">
+                ADMIN
+            </h1>
+            <ul class="p-0">
+                <li class="active"><a href="home">Dashboard</a></li>
+                <li>
+                    <a href="javascript:void(0)" class="first-btn">Quản lí hàng hóa
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="first-show">
+                        <li><a href="/admin/themmoi.html"><i class="fa-solid fa-square-plus"></i>&nbsp Tạo mới</a></li>
+                        <li><a href="/admin/sanpham.html"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="second-btn">Quản lí danh mục
+                        <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="second-show">
+                        <li><a href="loai/Themloai"><i class="fa-solid fa-square-plus"></i>&nbsp Tạo mới</a></li>
+                        <li><a href="loai"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="third-btn">Quản lí khách hàng
+                        <span class="fas fa-caret-down third"></span>
+                    </a>
+                    <ul class="third-show">
+                        <li><a href="khachhang/ThemKH"><i class="fa-solid fa-square-plus"></i>&nbsp Tạo mới</a></li>
+                        <li><a href="khachhang"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="fourth-btn">Quản lí tin tức
+                        <span class="fas fa-caret-down fourth"></span>
+                    </a>
+                    <ul class="fourth-show">
+                        <li><a href="news/ThemNews"><i class="fa-solid fa-square-plus"></i>&nbsp Tạo mới</a></li>
+                        <li><a href="news"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="fifth-btn">Quản lí bình luận
+                        <span class="fas fa-caret-down fifth"></span>
+                    </a>
+                    <ul class="fifth-show">
+                        <li><a href="binhluan"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="sixth-btn">Quản lí hóa đơn
+                        <span class="fas fa-caret-down sixth"></span>
+                    </a>
+                    <ul class="sixth-show">
+                        <li><a href="javascript:void(0)"><i class="fa-solid fa-square-plus"></i>&nbsp Tạo mới</a></li>
+                        <li><a href="donhang/SayHi/1"><i class="fa-sharp fa-solid fa-pen-to-square"></i>&nbsp Xem</a></li>
+                    </ul>
+                </li>
+                <li>
+            </ul>
+        </nav>
+        <div class="wrap">
+            <div class="container p-5">
+                <div class="row pt-5 text-white">
+                  <div class="col-lg-3 col-md-6 col-sm-12 position-relative border  rounded bg-success">
+                    <div class="row ">
+                      <div class="logoLeft"><i class="border border-4 rounded-circle p-3 fa-solid fa-user fa-2x m-2"></i></div>
+                      <div class="info1">
+                        <h6 style="width:100%">Người dùng</h6>
+                        <p><b>200  khách hàng</b></p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-3 col-md-6 col-sm-12  border rounded bg-danger">
+                  <div class="row w-100 logobox">
+                      <div class="logoLeft"><i class="border border-4  rounded-circle p-3 fa-solid fa-burger fa-2x m-2"></i></div>
+                      <div class="info2 ">
+                        <h6>Sản phẩm</h6>
+                        <p><b>100 sản phẩm</b></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12  border rounded bg-primary">
+                  <div class="row w-100 logobox">
+                    <div class="logoLeft "><i class="border border-4 rounded-circle p-3 fa-solid fa-comment fa-2x m-2"></i></div>
+                    <div class="info3 ">
+                      <h6>Bình luận</h6>
+                      <p><b>20  bình luận</b></p>
+                    </div> 
+                    </div> 
+                  </div>
+              
+                  <div class="col-lg-3 col-md-6 col-sm-12  border rounded bg-info">
+                    <div class="row w-100 logobox">
+                      <div class="logoLeft ">
+                        <i class="border border-4 rounded-circle p-3 fa-solid fa-pen-nib fa-2x m-2 "></i>
+                      </div>  
+                      <div class="info4 ">
+                        <h6>Bài viết</h6>
+                        <p><b>10 bài viết</b></p>
+                      </div>
+                      </div> 
+                    </div>
+                </div>
+                <div class="row align-items-start justify-content-center py-4">
+                    <div class="col-5 shadow left"><div id="myChart" style="width:100%; max-width:100%; height:500px;"></div></div>
+                    <div class="col-7 pe-0 right">
+                      <div class="p-4 shadow">
+                        <h4 class="">Status Order</h4>
+                      <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                          <thead class="table-light">
+                            <tr>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">State</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-success">Completed</td>
+                            </tr>
+                            <tr>
+                             <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-warning">Pending</td>
+                            </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>                   
+                              <td class="text-danger">Cancelled</td>
+                            </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-success">Completed</td>
+                            </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                               <td>200</td>
+                               <td>2023-02-15</td>
+                               <td class="text-warning">Pending</td>
+                             </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-success">Completed</td>
+                            </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                               <td>200</td>
+                               <td>2023-02-15</td>
+                               <td class="text-warning">Pending</td>
+                             </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-success">Completed</td>
+                            </tr>
+                            <tr>
+                              <td>Glossy Tee</td>
+                              <td>200</td>
+                              <td>2023-02-15</td>
+                              <td class="text-success">Completed</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row shadow p-4">
+                  <h4 class="fw-semibold">Top Product</h4>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Sales</th>
+                        <th scope="col">Earning</th>
+                        <th scope="col">Inventory</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Glossy Tee</td>
+                        <td>200</td>
+                        <td>$400.00</td>
+                        <td>
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="progress col-8" style="height: 3px;">
+                              <div class="progress-bar bg-success" role="progressbar" aria-label="Example 1px high" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="col-4 text-center text-muted">20</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                       <td>Glossy Tee</td>
+                        <td>$400.00</td>
+                        <td>2023-02-15</td>
+                        <td>
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="progress col-8" style="height: 3px;">
+                              <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="col-4 text-center text-muted">180</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Glossy Tee</td>
+                        <td>$400.00</td>
+                        <td>2023-02-15</td>                   
+                        <td>
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="progress col-8" style="height: 3px;">
+                              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="col-4 text-center text-muted">90</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Glossy Tee</td>
+                        <td>$400.00</td>
+                        <td>2023-02-15</td>
+                        <td>
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="progress col-8" style="height: 3px;">
+                              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="col-4 text-center text-muted">75</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Glossy Tee</td>
+                         <td>$400.00</td>
+                         <td>2023-02-15</td>
+                         <td>
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="progress col-8" style="height: 3px;">
+                              <div class="progress-bar bg-success" role="progressbar" aria-label="Example 1px high" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="col-4 text-center text-muted">30</div>
+                          </div>
+                        </td>
+                       </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const heightR = document.querySelector('.right')
+    const heightL = document.querySelector('#myChart')
+    heightL.style.height = heightR.offsetHeight + "px"
+</script>
+<script>
+    google.charts.load('current',{packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    function drawChart() {
+    // Set Data
+    var data = google.visualization.arrayToDataTable([
+      ['Price', 'Size'],
+      [50,7],[60,8],[70,8],[80,9],[90,9],
+      [100,9],[110,10],[120,11],
+      [130,14],[140,14],[150,15]
+    ]);
+    // Set Options
+    var options = {
+      title: 'Product sold',
+      hAxis: {title: 'Days'},
+      vAxis: {title: 'Revenue'},
+      legend: 'none'
+    };
+    // Draw
+    var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+    }
+    </script>
+</html>

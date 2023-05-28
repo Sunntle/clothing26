@@ -1,0 +1,343 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "ShopAll",
+      "img": "product-6.jpg",
+      "show": 0,
+      "childs": [
+        {
+          "id": 0,
+          "name": "test 1"
+        },
+        {
+          "id": 1,
+          "name": "test 2"
+        },
+        {
+          "id": 2,
+          "name": "test 3"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Tops",
+      "img": "product-2.jpg",
+      "show": 1
+    },
+    {
+      "id": 2,
+      "name": "Bottoms",
+      "img": "bottom2.jpg",
+      "show": 1
+    },
+    {
+      "id": 3,
+      "name": "Outerwear",
+      "img": "jacket2.jpg",
+      "show": 1
+    },
+    {
+      "id": 4,
+      "name": "Footwear",
+      "img": "footwear.jpg",
+      "show": 1
+    },
+    {
+      "id": 5,
+      "name": "Hat",
+      "img": "hat.jpg",
+      "show": 1
+    },
+    {
+      "id": 6,
+      "name": "Bag",
+      "img": "bag.jpg",
+      "show": 1
+    },
+    {
+      "id": 7,
+      "name": "Sale",
+      "img": "product-3.jpg",
+      "show": 1
+    },
+    {
+      "id": 8,
+      "name": "Recruitment",
+      "img": "product-4.jpg",
+      "show": 0
+    },
+    {
+      "id": 9,
+      "name": "Shoes",
+      "img": "cat-3.jpg",
+      "show": 1
+    }
+  ],
+  "banners": [
+    {
+      "id": 0,
+      "img": "hero-1.jpg",
+      "headerContent": "Summer Collection",
+      "mainContent": "Fall - Winter Collections 2030",
+      "content": "A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality."
+    },
+    {
+      "id": 1,
+      "img": "hero-2.jpg",
+      "headerContent": "Summer Collection",
+      "mainContent": "Fall - Winter Collections 2030",
+      "content": "A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality."
+    }
+  ],
+  "products": [
+    {
+      "name": "Glossy Tee White 22344",
+      "price": 3400005,
+      "idLoai": 2,
+      "colors": [
+        "Red",
+        "Blue",
+        "White",
+        "Pink"
+      ],
+      "img": [
+        "bottom1.jpg"
+      ],
+      "size": {
+        "M": {
+          "amount": 100,
+          "sold": 1
+        },
+        "L": {
+          "amount": 100,
+          "sold": 0
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 5
+        }
+      },
+      "date": "2023-01-11",
+      "id": 1
+    },
+    {
+      "name": "CABINET BONE SHORT",
+      "price": 405000,
+      "idLoai": 2,
+      "img": [
+        "bottom2.jpg",
+        "bottom3.jpg"
+      ],
+      "colors": [
+        "Red",
+        "Blue",
+        "White",
+        "Pink"
+      ],
+      "date": "2023-01-01",
+      "size": {
+        "M": {
+          "amount": 100,
+          "sold": 100
+        },
+        "L": {
+          "amount": 100,
+          "sold": 5
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 3
+        }
+      },
+      "id": 2
+    },
+    {
+      "id": 3,
+      "idLoai": 1,
+      "name": "CLAMOROUS GILE",
+      "img": [
+        "hades_18_1.jpg",
+        "hades_18_2.jpg",
+        "hades_18_3.jpg"
+      ],
+      "price": 690000,
+      "size": {
+        "M": {
+          "amount": 100,
+          "sold": 20
+        },
+        "L": {
+          "amount": 100,
+          "sold": 0
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 3
+        }
+      },
+      "colors": [
+        "Red",
+        "Blue",
+        "White"
+      ],
+      "date": "2023-10-02"
+    },
+    {
+      "id": 4,
+      "idLoai": 3,
+      "name": "TAWNY JACKET",
+      "img": [
+        "jacket2.jpg",
+        "jacket1.jpeg",
+        "jacket3.jpg"
+      ],
+      "price": 690000,
+      "size": {
+        "S": {
+          "amount": 100,
+          "sold": 1
+        },
+        "M": {
+          "amount": 100,
+          "sold": 1
+        },
+        "L": {
+          "amount": 100,
+          "sold": 0
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 30
+        }
+      },
+      "colors": [
+        "Red",
+        "Blue",
+        "White"
+      ],
+      "date": "2023-02-15"
+    },
+    {
+      "id": 5,
+      "idLoai": 6,
+      "name": "CURVE CROSSBODY QUITED BAG",
+      "img": [
+        "bag.jpg",
+        "bag1.jpg",
+        "bag2.jpg",
+        "bag3.jpg"
+      ],
+      "price": 340000,
+      "amount": 200,
+      "sold": 20,
+      "colors": [
+        "Black"
+      ],
+      "date": "2023-02-07"
+    },
+    {
+      "name": "INTERNATIONAL SOCKS",
+      "price": 65000,
+      "idLoai": 4,
+      "colors": [
+        "White"
+      ],
+      "img": [
+        "footwear.jpg",
+        "sock1.jpg",
+        "sock2.jpg"
+      ],
+      "size": {},
+      "date": "2023-01-20",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "idLoai": 2,
+      "name": "HIGHER-UP PANT",
+      "img": [
+        "pant2.jpg",
+        "pant1.jpg",
+        "pant3.jpg"
+      ],
+      "price": 585000,
+      "size": {
+        "M": {
+          "amount": 100,
+          "sold": 10
+        },
+        "L": {
+          "amount": 100,
+          "sold": 10
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 10
+        }
+      },
+      "colors": [
+        "Green",
+        "Black"
+      ],
+      "date": "2023-01-30"
+    },
+    {
+      "id": 8,
+      "idLoai": 7,
+      "name": "RESILIENT CITY TEE",
+      "img": [
+        "sale2.jpg",
+        "sale1.jpg",
+        "sale3.jpg"
+      ],
+      "price": 266000,
+      "size": {
+        "M": {
+          "amount": 100,
+          "sold": 20
+        },
+        "L": {
+          "amount": 100,
+          "sold": 30
+        },
+        "XL": {
+          "amount": 100,
+          "sold": 10
+        }
+      },
+      "colors": [
+        "Black"
+      ],
+      "date": "2023-01-01"
+    },
+    {
+      "name": "SHOES POSTMAN 2345",
+      "price": 222222,
+      "idLoai": 2,
+      "colors": [
+        "Pink"
+      ],
+      "img": [
+        "bag1.jpg"
+      ],
+      "size": {
+        "M": {
+          "amount": 200,
+          "sold": 0
+        },
+        "L": {
+          "amount": 10,
+          "sold": 0
+        },
+        "XL": {
+          "amount": 0,
+          "sold": 0
+        }
+      },
+      "date": "2023-04-13",
+      "id": 11
+    }
+  ]
+}

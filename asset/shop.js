@@ -22,6 +22,12 @@ function loadData() {
         const button = document.querySelector(".nice-select");
         const list = document.querySelector(".list");
         let valueFilter = 1;
+        const btnSearch = document.querySelector("button.btn-search");
+        btnSearch.addEventListener("click", (e) => __awaiter(this, void 0, void 0, function* () {
+            e.preventDefault();
+            const query = document.querySelector("input[name=searchFrm]");
+            yield fetchData(`http://localhost:3000/products?q=${query.value}`);
+        }));
         button.addEventListener("click", (e) => {
             const event = e.target;
             list.classList.toggle("show");
@@ -38,9 +44,21 @@ function loadData() {
                         list.textContent = `Low To High`;
                     }
                 }
-                console.log(url + (url.includes("?") ? "&" : "?") + filterOption);
                 fetchData(url + (url.includes("?") ? "&" : "?") + filterOption);
             }
+        });
+        const filterByPrice = document.querySelectorAll(".price");
+        filterByPrice.forEach((el) => {
+            el.addEventListener("click", (e) => __awaiter(this, void 0, void 0, function* () {
+                e.preventDefault();
+                const number = el.getAttribute("data-price");
+                if (number) {
+                    +number == 0
+                        ? (url = `http://localhost:3000/products?price_lte=500000`)
+                        : (url = `http://localhost:3000/products?price_gte=500000`);
+                }
+                yield fetchData(url);
+            }));
         });
         const filterByCate = document.querySelectorAll(".categories");
         filterByCate.forEach((el) => {

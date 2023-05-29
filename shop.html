@@ -139,15 +139,20 @@
           <div class="col-lg-3">
             <div class="shop__sidebar">
               <div class="sidebar__search mb-5">
-                <form class="d-flex position-relative" role="search">
+                <form
+                  class="d-flex position-relative"
+                  name="searchFrm"
+                  role="search"
+                >
                   <input
                     class="form-control me-2"
                     type="text"
                     placeholder="Search"
                     aria-label="Search"
+                    name="searchFrm"
                   />
                   <button
-                    class="btn position-absolute text-muted"
+                    class="btn btn-search position-absolute text-muted"
                     type="submit"
                   >
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -201,36 +206,17 @@
                       <div class="accordion-body">
                         <a
                           href="#"
-                          class="text-muted text-decoration-none price-0"
-                          >$0 - $50</a
+                          class="text-muted text-decoration-none price"
+                          data-price="0"
+                          >0đ - 500000đ</a
                         >
                       </div>
                       <div class="accordion-body">
                         <a
                           href="#"
-                          class="text-muted text-decoration-none price-1"
-                          >$50 - $100</a
-                        >
-                      </div>
-                      <div class="accordion-body">
-                        <a
-                          href="#"
-                          class="text-muted text-decoration-none price-2"
-                          >$100 - $150</a
-                        >
-                      </div>
-                      <div class="accordion-body">
-                        <a
-                          href="#"
-                          class="text-muted text-decoration-none price-3"
-                          >$150 - $200</a
-                        >
-                      </div>
-                      <div class="accordion-body">
-                        <a
-                          href="#"
-                          class="text-muted text-decoration-none price-4"
-                          >$200+</a
+                          class="text-muted text-decoration-none price"
+                          data-price="1"
+                          >500000đ+</a
                         >
                       </div>
                     </div>
@@ -254,11 +240,6 @@
                       aria-labelledby="flush-headingThree"
                       data-bs-parent="#accordionFlushExample"
                     >
-                      <div class="accordion-body">
-                        <a href="#" class="text-muted text-decoration-none size"
-                          >All Size</a
-                        >
-                      </div>
                       <div class="accordion-body">
                         <a
                           href="#"
@@ -468,5 +449,4 @@
     crossorigin="anonymous"
   ></script>
   <script type="module" src="asset/shop.js"></script>
-  <!-- <script type="module" src="asset/loadCategories.js"></script> -->
 </html>

@@ -37,7 +37,7 @@ body {
 .header__menu .active::after {
   position: absolute;
   content: "";
-  width: calc(100% - 2rem);
+  width: calc(100% - 3rem);
   height: 3px;
   background-color: var(--primary-color);
   left: 1rem;
@@ -65,7 +65,7 @@ a.page:hover::after,
 a.blog:hover::after,
 a.contact:hover::after,
 a.shop:hover::after {
-  width: calc(100% - 2rem);
+  width: calc(100% - 3rem);
   height: 3px;
   background-color: var(--primary-color);
   left: 1rem;
@@ -307,8 +307,15 @@ button.letter-spacing {
 .m-30 {
   margin: 1.875rem;
 }
-@media (max-width>=992px) {
-  .navsub {
-    visibility: visible;
+@media (min-width: 992px) {
+  .header__menu .active::after {
+    width: calc(100% - 2rem);
+  }
+  a.home:not(.header__menu .active):hover:after,
+  a.page:hover::after,
+  a.blog:hover::after,
+  a.contact:hover::after,
+  a.shop:hover::after {
+    width: calc(100% - 2rem);
   }
 }

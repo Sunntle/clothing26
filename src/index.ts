@@ -1,5 +1,4 @@
 import addtocart, { renderCountCart } from "./addtocart.js";
-import { MenuLv2 } from "./allProduct";
 import { sizeType } from "./item";
 import responsiveNav from "./responsiveNav.js";
 interface BannerType {

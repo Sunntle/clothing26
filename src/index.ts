@@ -93,7 +93,7 @@ async function loadData() {
   let loadItemFeatured = [];
   for (const [index, value] of products.entries()) {
     if (index < 8) {
-      loadItemFeatured.push(`<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+      loadItemFeatured.push(`<div class="col-lg-3 col-md-4 col-6 pb-1">
                                   <div class="product-item mb-4" data-idItem=${value.id}>
                                       <div class="product-img position-relative overflow-hidden">
                                           <img class="img-fluid w-100" src="asset/img/${value.img[0]}" alt="">
@@ -132,7 +132,7 @@ async function loadData() {
   let html = "";
   for (const [index, value] of products.entries()) {
     if (index < 8) {
-      html = `<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+      html = `<div class="col-lg-3 col-md-4 col-6 pb-1">
                     <div class="product-item mb-4" data-idItem=${value.id}>
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="asset/img/${value.img[0]}" alt="">
